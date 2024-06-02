@@ -19,5 +19,4 @@ jobs:
         set -x
         nix build
         export PATH=$PWD/result/bin:$PATH
-        devenv shell devenv-test-cli
         devenv-run-tests --only trafficserver examples
